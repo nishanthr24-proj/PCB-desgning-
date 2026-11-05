@@ -9,7 +9,3 @@ _autosave-*
 # Local operating-system files
 .DS_Store
 Thumbs.db
-
-# Python simulation helper caches
-__pycache__/
-*.py[cod]
