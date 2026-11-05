@@ -1,0 +1,11 @@
+# KiCad per-user state, locks, and automatic backups
+*.kicad_prl
+*.lck
+~*.kicad_sch.lck
+*-backups/
+_autosave-*
+*.bak
+
+# Local operating-system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspace/solar-charger-led-revA/Solar_Charger_LED_RevA.kicad_sch</source>
+    <date>2026-11-05T17:04:40+0000</date>
+    <tool>Eeschema 9.0.2+dfsg-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Solar Battery Charger - Charging and Fault LEDs</title>
+        <company/>
+        <rev>A</rev>
+        <date>2026-11-05</date>
+        <source>Solar_Charger_LED_RevA.kicad_sch</source>
+        <comment number="1" value="1S Li-ion / 4.20 V / 500 mA - engineering prototype"/>
+        <comment number="2" value="Based on the uploaded Fernando S.M.H.G. project; corrected circuit and layout"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10u / 50V</value>
+      <footprint>SolarCharger:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Design_Note">X7R; check effective capacitance at 25V bias.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:C_1210_3225Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Design_Note" value="X7R; check effective capacitance at 25V bias."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7784a2e3-a2aa-45bd-a4dc-1d4f00ef359d</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>0.68u / 10V</value>
+      <footprint>SolarCharger:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">X7R, low leakage; nominal 3 hour timer; retries if not near float.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Design_Note" value="X7R, low leakage; nominal 3 hour timer; retries if not near float."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f0e71db8-9d2c-43f9-a0c0-588be16426a4</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1u / 16V</value>
+      <footprint>SolarCharger:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">X7R bootstrap capacitor; 16V rating is across BOOST to SW.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Design_Note" value="X7R bootstrap capacitor; 16V rating is across BOOST to SW."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67294bc3-9246-4555-b419-bc4dfe63ee9e</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>22u / 16V</value>
+      <footprint>SolarCharger:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Design_Note">X7R output bypass; choose a part with &gt;=10uF effective capacitance at 4.2V over temperature/tolerance.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:C_1210_3225Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Design_Note" value="X7R output bypass; choose a part with &gt;=10uF effective capacitance at 4.2V over temperature/tolerance."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>76fca0ed-8073-4438-bb29-28e30f0b7b83</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100u / 10V</value>
+      <footprint>SolarCharger:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <fields>
+        <field name="Design_Note">Low ESR, non-ceramic, 100uF, &gt;=10V; verify 6.3mm diameter and 2.50mm lead pitch against chosen part.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:CP_Radial_D6.3mm_P2.50mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
+      <property name="Design_Note" value="Low ESR, non-ceramic, 100uF, &gt;=10V; verify 6.3mm diameter and 2.50mm lead pitch against chosen part."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8030b03b-0ee6-4f6f-b720-17bf8aeeb1e0</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100n / 50V</value>
+      <footprint>SolarCharger:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">X7R local high-frequency input bypass.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Design_Note" value="X7R local high-frequency input bypass."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>378847f4-783d-4711-8d23-83f8dcf6ef10</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>SS14 / 40V</value>
+      <footprint>SolarCharger:D_SMA</footprint>
+      <fields>
+        <field name="Design_Note">Bootstrap refresh Schottky; cathode BOOST, anode BAT.</field>
+        <field name="MPN">SS14</field>
+        <field name="Footprint">SolarCharger:D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="D_Schottky" description="Schottky diode"/>
+      <property name="Design_Note" value="Bootstrap refresh Schottky; cathode BOOST, anode BAT."/>
+      <property name="MPN" value="SS14"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0faf8c92-1cae-4026-85d4-99900dd22b61</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>SS14 / 40V</value>
+      <footprint>SolarCharger:D_SMA</footprint>
+      <fields>
+        <field name="Design_Note">Catch Schottky, 1A / 40V minimum; cathode SW, anode GND.</field>
+        <field name="MPN">SS14</field>
+        <field name="Footprint">SolarCharger:D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="D_Schottky" description="Schottky diode"/>
+      <property name="Design_Note" value="Catch Schottky, 1A / 40V minimum; cathode SW, anode GND."/>
+      <property name="MPN" value="SS14"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>65b7b5e3-0d42-4ea8-bd7b-65d1721b78d7</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>GREEN - CHARGE</value>
+      <footprint>SolarCharger:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Green, low-current LED; cathode to CHRG_N.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:LED_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="LED" description="Light emitting diode"/>
+      <property name="Design_Note" value="Green, low-current LED; cathode to CHRG_N."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2a5553e4-9f62-4f3b-99bc-2df288448c57</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>RED - FAULT</value>
+      <footprint>SolarCharger:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Red, low-current LED; cathode to FAULT_N.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:LED_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="LED" description="Light emitting diode"/>
+      <property name="Design_Note" value="Red, low-current LED; cathode to FAULT_N."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93516fa3-bd01-46ef-b0f2-9d7860f4dad6</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>SOLAR INPUT</value>
+      <footprint>SolarCharger:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <fields>
+        <field name="Design_Note">12 V nominal panel; Vmp approx 18 V; cold Voc &lt;=25 V.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Design_Note" value="12 V nominal panel; Vmp approx 18 V; cold Voc &lt;=25 V."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d92b30e-db6a-4259-afb8-fee144251c01</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>1S PROTECTED CELL</value>
+      <footprint>SolarCharger:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <fields>
+        <field name="Design_Note">External protected 18650, 4.2 V CC/CV; pin 1 BAT+, pin 2 GND.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Design_Note" value="External protected 18650, 4.2 V CC/CV; pin 1 BAT+, pin 2 GND."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cbc56c0c-991f-425f-86f5-797760c4c78b</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>BATTERY NTC</value>
+      <footprint>SolarCharger:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Design_Note">External 10k NTC B=3380K; attach to cell. Open sensor disables temperature protection.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Design_Note" value="External 10k NTC B=3380K; attach to cell. Open sensor disables temperature protection."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d87b7e87-6541-4832-a95e-8870a7cbfdfe</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>STATUS / SET</value>
+      <footprint>SolarCharger:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Design_Note">Status outputs pulled to VIN: NOT logic-level safe. SET is analog sense; do not drive.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:PinHeader_1x04_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Design_Note" value="Status outputs pulled to VIN: NOT logic-level safe. SET is analog sense; do not drive."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ea3a770-d59d-483b-b2fe-bbe115f2ff27</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>22u / &gt;=1A</value>
+      <footprint>SolarCharger:L_Bourns-SRN6028</footprint>
+      <fields>
+        <field name="Design_Note">Shielded power inductor; Isat&gt;=1A, Irms&gt;=0.5A, low DCR; Bourns SRN6028-220M.</field>
+        <field name="MPN">SRN6028-220M</field>
+        <field name="Footprint">SolarCharger:L_Bourns-SRN6028</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="L" description="Inductor"/>
+      <property name="Design_Note" value="Shielded power inductor; Isat&gt;=1A, Irms&gt;=0.5A, low DCR; Bourns SRN6028-220M."/>
+      <property name="MPN" value="SRN6028-220M"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2832616-305d-4371-9c30-7167d321f5e4</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k / 1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">0.125W or better; LED current approx 1.5mA at VIN=18V.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="0.125W or better; LED current approx 1.5mA at VIN=18V."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9d1edcb-334b-434e-bb3a-05b3e01280c3</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k / 1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">0.125W or better; limits fault LED current.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="0.125W or better; limits fault LED current."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>927016ea-b874-4443-a476-b783bcf8aaa3</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>203k / 0.1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Bias compensation: R3+(R4||R5)=250.14kohm.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Bias compensation: R3+(R4||R5)=250.14kohm."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>717e1386-812a-437f-b139-6e24cbcb1c4d</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>60.0k / 0.1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Feedback top resistor; do not substitute 60.4k without recalculation.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Feedback top resistor; do not substitute 60.4k without recalculation."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c09b8a83-93f2-4db5-8e0b-253b972fc8a1</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>220k / 0.1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Feedback lower resistor; nominal Vfloat = 3.3*(1+60/220)=4.200V.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Feedback lower resistor; nominal Vfloat = 3.3*(1+60/220)=4.200V."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>78fe30b8-9cef-4f9b-9ffa-25be9876f633</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>0.20 / 1% / 0.5W</value>
+      <footprint>SolarCharger:R_1206_3216Metric</footprint>
+      <fields>
+        <field name="Design_Note">Current sense; Kelvin route both terminals; Imax=0.1/0.20=0.50A; P=0.05W.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Current sense; Kelvin route both terminals; Imax=0.1/0.20=0.50A; P=0.05W."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5da4760b-bdee-455c-9fb7-99f20a1f5b44</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100k / 1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Default always enabled when solar input is present.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Default always enabled when solar input is present."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1deb1461-2af9-4872-b5f9-b984c1f94678</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100k / 1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Open-collector pull-up to VIN; not an MCU-level interface.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Open-collector pull-up to VIN; not an MCU-level interface."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc4fbdf9-a9d7-4ffa-a518-c26fc2a83002</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>100k / 1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Open-collector pull-up to VIN; not an MCU-level interface.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Open-collector pull-up to VIN; not an MCU-level interface."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38a25366-6a17-418c-a85e-fdb806d91d03</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>562k / 1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Input-voltage regulation top; target approx17.87V, not dynamic perturb-and-observe MPPT.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Input-voltage regulation top; target approx17.87V, not dynamic perturb-and-observe MPPT."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4bef215e-04e8-44d8-8132-7c63f4196a4c</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>100k / 1%</value>
+      <footprint>SolarCharger:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Design_Note">Input-voltage regulation bottom; 2.7*(1+562/100)=17.874V.</field>
+        <field name="MPN"/>
+        <field name="Footprint">SolarCharger:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Design_Note" value="Input-voltage regulation bottom; 2.7*(1+562/100)=17.874V."/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e429cb3-7a7d-4ab6-baf9-037ee25edaa1</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>LT3652EMSE#PBF</value>
+      <footprint>SolarCharger:MSOP-12-1EP_3x4.039mm_P0.65mm_EP1.651x2.845mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/3652fe.pdf</datasheet>
+      <fields>
+        <field name="Design_Note">Pin-equivalent MSOP variant has wider 0.65mm pitch. Exposed pad must be soldered to GND; use reflow.</field>
+        <field name="MPN">LT3652EMSE#PBF</field>
+        <field name="Footprint">SolarCharger:MSOP-12-1EP_3x4.039mm_P0.65mm_EP1.651x2.845mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/3652fe.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SolarCharger" part="LT3652EMSE" description="Step-down battery charger for solar power, Lithium Phosphate (LiFePO4), Lead (Pb), Lithium+ (Li+) , 4.95V to 32V VDD, 2A, -40 to +125 degree Celsius, MSOP-12"/>
+      <property name="Design_Note" value="Pin-equivalent MSOP variant has wider 0.65mm pitch. Exposed pad must be soldered to GND; use reflow."/>
+      <property name="MPN" value="LT3652EMSE#PBF"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Solar_Charger_LED_RevA.kicad_sch"/>
+      <property name="ki_keywords" value="battery charger solar"/>
+      <property name="ki_fp_filters" value="MSOP*1EP*3x4.039mm*P0.65mm*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>319d8887-0db4-403e-9f8e-991c5d90409a</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="SolarCharger" part="C_Polarized_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized_Small</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Polarized capacitor, small symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarCharger" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor, small symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarCharger" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarCharger" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarCharger" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarCharger" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarCharger" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarCharger" part="LT3652EMSE">
+      <description>Step-down battery charger for solar power, Lithium Phosphate (LiFePO4), Lead (Pb), Lithium+ (Li+) , 4.95V to 32V VDD, 2A, -40 to +125 degree Celsius, MSOP-12</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/3652fe.pdf</docs>
+      <footprints>
+        <fp>MSOP*1EP*3x4.039mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT3652EMSE</field>
+        <field name="Footprint">Package_SO:MSOP-12-1EP_3x4.039mm_P0.65mm_EP1.651x2.845mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/3652fe.pdf</field>
+        <field name="Description">Step-down battery charger for solar power, Lithium Phosphate (LiFePO4), Lead (Pb), Lithium+ (Li+) , 4.95V to 32V VDD, 2A, -40 to +125 degree Celsius, MSOP-12</field>
+      </fields>
+      <pins>
+        <pin num="1" name="V_{IN}" type="power_in"/>
+        <pin num="2" name="V_{IN_REG}" type="input"/>
+        <pin num="3" name="~{SHDN}" type="input"/>
+        <pin num="4" name="~{CHRG}" type="open_collector"/>
+        <pin num="5" name="~{FAULT}" type="open_collector"/>
+        <pin num="6" name="TIMER" type="output"/>
+        <pin num="7" name="V_{FB}" type="input"/>
+        <pin num="8" name="NTC" type="input"/>
+        <pin num="9" name="BAT" type="output"/>
+        <pin num="10" name="SENSE" type="input"/>
+        <pin num="11" name="BOOST" type="input"/>
+        <pin num="12" name="SW" type="output"/>
+        <pin num="13" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarCharger" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor, small symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SolarCharger">
+      <uri>/workspace/solar-charger-led-revA/SolarCharger.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/BAT" class="Default">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="BAT" pintype="output"/>
+    </net>
+    <net code="2" name="/BOOST" class="Default">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="BOOST" pintype="input"/>
+    </net>
+    <net code="3" name="/CHRG_N" class="Default">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="~{CHRG}" pintype="open_collector"/>
+    </net>
+    <net code="4" name="/EN" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="~{SHDN}" pintype="input"/>
+    </net>
+    <net code="5" name="/FAULT_N" class="Default">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="~{FAULT}" pintype="open_collector"/>
+    </net>
+    <net code="6" name="/FB_DIV" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="/GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="8" name="/LED_CHG_A" class="Default">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="/LED_FAULT_A" class="Default">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="/NTC" class="Default">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="NTC" pintype="input"/>
+    </net>
+    <net code="11" name="/SENSE" class="Default">
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="SENSE" pintype="input"/>
+    </net>
+    <net code="12" name="/SW" class="Default">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="SW" pintype="output"/>
+    </net>
+    <net code="13" name="/TIMER" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="TIMER" pintype="output"/>
+    </net>
+    <net code="14" name="/VFB" class="Default">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="V_{FB}" pintype="input"/>
+    </net>
+    <net code="15" name="/VIN" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="V_{IN}" pintype="power_in"/>
+    </net>
+    <net code="16" name="/VIN_REG" class="Default">
+      <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="V_{IN_REG}" pintype="input"/>
+    </net>
+  </nets>
+</export>
