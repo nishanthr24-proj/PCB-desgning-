@@ -30,3 +30,20 @@ The revision passes KiCad ERC and PCB DRC with zero violations, zero unconnected
 **This is an unbuilt engineering prototype.** It has not been fabricated, physically tested, or electrically simulated. Complete the documented bench checks before connecting a lithium-ion cell. J4 status outputs are pulled up to the solar input voltage and must not be connected directly to microcontroller GPIOs.
 
 The design builds on the user-supplied [upstream project](https://github.com/Hirusha785/solar-battery-charge-controller-pcb), whose README credits Fernando S.M.H.G. Attribution and KiCad library license notices are included in the project folder.
+
+## Simulation demonstration
+
+The **[Solar_Charger_Simulation](Solar_Charger_Simulation/)** folder includes seven completed ngspice simulations, an offline browser viewer, waveform data, and a PDF report.
+
+1. Download and extract this repository using **Code → Download ZIP**.
+2. Open **`Solar_Charger_Simulation/START_HERE.html`** in Microsoft Edge, Chrome, or Firefox. GitHub's normal file page shows the source, so download the files first.
+3. Choose a test case and press **Play results**.
+
+Demonstrations cover charging/taper/termination, hot and cold faults, sunlight changes, a bad-battery timeout, preconditioning, load/recharge, and a disconnected temperature sensor.
+
+- [Simulation instructions and model assumptions](Solar_Charger_Simulation/README.md)
+- [Simulation report (PDF)](Solar_Charger_Simulation/Simulation_Report.pdf)
+- [Runnable ngspice circuit files](Solar_Charger_Simulation/spice/)
+- [Numerical validation results](Solar_Charger_Simulation/results/VALIDATION.json)
+
+All seven SPICE runs completed, and 40 numerical checks passed. **This is an educational averaged behavioral model, not the manufacturer's LT3652 model or verification of the physical PCB.** The browser plays recorded simulation results; use ngspice to modify and re-run the circuit files.

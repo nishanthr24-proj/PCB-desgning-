@@ -1,0 +1,13 @@
+Solar charger behavioral demonstration: Hot / cold fault and recovery
+* EDUCATIONAL AVERAGED MODEL, not the manufacturer LT3652 model.
+* 1 simulation second represents 1 hour of charging.
+.param SOC0=0.25
+VSUN sun 0 1
+VTEMP temp_c 0 PWL(0 25 1 25 1.001 55 2 55 2.001 25 3 25 3.001 -10 4 -10 4.001 25 6 25)
+VLOAD load 0 0
+VSTALL stall 0 0
+VNTCOPEN ntc_open 0 0
+.include "behavioral_core.inc"
+.tran 0.001 6 0 0.001 uic
+.save V(VIN) V(BAT) V(SENSE) V(SOC) V(TEMP_C) V(SUN) V(NTC) V(TEMP_FAULT) V(BAD_FAULT) V(DONE) V(CLOCK) V(VIN_REG) V(NTC_OPEN) V(LOAD) I(VSENSE) I(VBATMON) I(VLED_GREEN) I(VLED_RED)
+.end

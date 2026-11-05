@@ -1,0 +1,13 @@
+Solar charger behavioral demonstration: Bad-battery timeout
+* EDUCATIONAL AVERAGED MODEL, not the manufacturer LT3652 model.
+* 1 simulation second represents 1 hour of charging.
+.param SOC0=0.0
+VSUN sun 0 1
+VTEMP temp_c 0 25
+VLOAD load 0 0
+VSTALL stall 0 1
+VNTCOPEN ntc_open 0 0
+.include "behavioral_core.inc"
+.tran 0.001 1.2 0 0.001 uic
+.save V(VIN) V(BAT) V(SENSE) V(SOC) V(TEMP_C) V(SUN) V(NTC) V(TEMP_FAULT) V(BAD_FAULT) V(DONE) V(CLOCK) V(VIN_REG) V(NTC_OPEN) V(LOAD) I(VSENSE) I(VBATMON) I(VLED_GREEN) I(VLED_RED)
+.end
