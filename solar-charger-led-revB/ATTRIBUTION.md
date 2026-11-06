@@ -26,6 +26,19 @@
   with project-local library nicknames. They retain the upstream library license
   and its exception. See the included `licenses/` copyright files. The project
   is not assigned a new license on the user's behalf.
+- Bundled standard 3D models come from the official **KiCad packages3D** library,
+  pinned to commit `b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a`:
+  <https://gitlab.com/kicad/libraries/kicad-packages3D>.
+  They retain **CC BY-SA 4.0 with the KiCad library design exception**; see
+  [licenses/kicad-packages3D-LICENSE.md](licenses/kicad-packages3D-LICENSE.md).
+  [3dmodels/SOURCES.json](3dmodels/SOURCES.json) records individual model sources.
+  L1's locally created representative body and the representative U1 package
+  dimensions are described in [3D/README.md](3D/README.md). These are visualization
+  models, not manufacturer validation of the selected components.
+- The user-supplied **DC-DC-Buck-converter-main.zip**, archive commit
+  `8b01752160c50a88990ef84c027424b66262864f`, inspired the populated front/back
+  presentation views. Its README credits **Nandeesh K S**. No reference-board
+  geometry, artwork, or component model files were copied into Rev B.
 - Protection components: F1 and D5 are specified by required ratings and package
   class. Verify the chosen fuse's DC voltage/interrupt ratings and land pattern,
   and the chosen diode's current/voltage/thermal ratings, against the actual

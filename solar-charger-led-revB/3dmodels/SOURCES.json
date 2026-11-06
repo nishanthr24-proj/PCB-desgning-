@@ -1,0 +1,138 @@
+{
+  "library": "KiCad/kicad-packages3D",
+  "upstream_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+  "library_license": "CC-BY-SA-4.0 with KiCad electronic-design exception; retain each STEP header attribution",
+  "model_count": 16,
+  "models": [
+    {
+      "file": "Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "39dc7bf95fed00917ab20af81ff9e25a70f8d003bc07cffea11840489a11933e",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Diode_SMD.3dshapes/D_SMA.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Diode_SMD.3dshapes/D_SMA.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Fuse.3dshapes/Fuse_1206_3216Metric.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "3c8f003aeeebf93eb2d44c42785d3aef9cd3b528671ecdf222edad47edada387",
+      "modified": false,
+      "kind": "generic KiCad package geometry; confirm selected manufacturer dimensions"
+    },
+    {
+      "file": "Package_SO.3dshapes/MSOP-12_3x4mm_Representative.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/Package_SO.3dshapes/MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "d51883f8bd3c7c3cacd418c6746b0842452db904712ae67188fcbe159798ec78",
+      "modified": false,
+      "kind": "representative U1: 3x4.000 mm body versus nominal 3x4.039 mm; same 0.65 mm lead pitch; not a vendor-qualified LT3652 model"
+    },
+    {
+      "file": "Inductor_SMD.3dshapes/L_Bourns-SRN6028_Envelope.step",
+      "source": "../3D/source/generate_inductor.py",
+      "sha256": "bfc383dda40caa98c71149b00e4c0f2fce67127e17c2552a6022c85938580aca",
+      "modified": false,
+      "license": "CC0-1.0 for this original envelope and generator",
+      "kind": "original representative envelope; 6.6 x 6.2 x 2.8 mm; not vendor supplied or dimensionally qualified"
+    },
+    {
+      "file": "LED_SMD.3dshapes/LED_0805_Green_Display.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "15c1904ae21c9aacc86e949bcc80e305709385862b95b2d2b09d28a42803fc31",
+      "modified": true,
+      "modification": "body and marker colors only; unchanged STEP geometry; colors do not indicate an energized LED",
+      "kind": "illustrative package appearance"
+    },
+    {
+      "file": "LED_SMD.3dshapes/LED_0805_Red_Display.step",
+      "source": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "source_commit": "b8b3cfdfad88ba66f21002b3de51dc6f7d55ba5a",
+      "sha256": "4a889b449435829a7a40165672e43a974bd7ef4f0a70201e7362d8829dd9a405",
+      "modified": true,
+      "modification": "body and marker colors only; unchanged STEP geometry; colors do not indicate an energized LED",
+      "kind": "illustrative package appearance"
+    }
+  ]
+}

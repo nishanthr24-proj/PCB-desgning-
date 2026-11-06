@@ -32,5 +32,19 @@
     "No load-management stage or dynamic MPPT",
     "J4 status outputs are VIN-level; not directly MCU safe"
   ],
-  "design_target": "1S protected 4.2V Li-ion / 500mA; nominal12V panel, Vmp approx18V, coldVoc<=25V; input-regulation setting17.874V afterD5"
+  "design_target": "1S protected 4.2V Li-ion / 500mA; nominal12V panel, Vmp approx18V, coldVoc<=25V; input-regulation setting17.874V afterD5",
+  "populated_3D": {
+    "fitted_models": 30,
+    "intentionally_bodyless_footprints": 13,
+    "bundled_step_models": 16,
+    "portable_path_checks": "PASS; copied folder with spaces and no global model directory renders successfully",
+    "individual_step_imports": "16/16 valid in FreeCAD",
+    "assembly_step_import": "Valid, 143 solids including board/pads/markings/component geometry; not a component count",
+    "representative_model_xy_checks": "30 within board outline; no pairwise AABB overlaps",
+    "ECAD_geometry": "Unchanged after removing only model associations from comparison",
+    "manufacturing_files": "Byte-identical to prior Rev B outputs",
+    "detailed_results": "3D.json",
+    "verification_script": "check_3d.py",
+    "limitations": "U1 generic3x4.000mm model vs nominal3x4.039mm; L1 representative6.6x6.2x2.8mm; no vendor model qualification; LED colors do not depict operation"
+  }
 }

@@ -1,0 +1,371 @@
+{
+  "date": "2026-11-06",
+  "tool": "KiCad 9.0.2; FreeCAD 1.0.0/OpenCASCADE STEP import",
+  "fitted_models": {
+    "D3": "${KIPRJMOD}/3dmodels/LED_SMD.3dshapes/LED_0805_Green_Display.step",
+    "J2": "${KIPRJMOD}/3dmodels/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+    "R7": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "R11": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "C2": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "JP1": "${KIPRJMOD}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+    "C4": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+    "R10": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "J4": "${KIPRJMOD}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+    "J3": "${KIPRJMOD}/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+    "D4": "${KIPRJMOD}/3dmodels/LED_SMD.3dshapes/LED_0805_Red_Display.step",
+    "J1": "${KIPRJMOD}/3dmodels/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+    "F1": "${KIPRJMOD}/3dmodels/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+    "R9": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "R2": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "D1": "${KIPRJMOD}/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+    "U1": "${KIPRJMOD}/3dmodels/Package_SO.3dshapes/MSOP-12_3x4mm_Representative.step",
+    "D2": "${KIPRJMOD}/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+    "C1": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+    "R8": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "R3": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "D5": "${KIPRJMOD}/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+    "C6": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "R5": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "L1": "${KIPRJMOD}/3dmodels/Inductor_SMD.3dshapes/L_Bourns-SRN6028_Envelope.step",
+    "C3": "${KIPRJMOD}/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "R4": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "R1": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "R6": "${KIPRJMOD}/3dmodels/Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+    "C5": "${KIPRJMOD}/3dmodels/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step"
+  },
+  "intentionally_no_model": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "TP1",
+    "TP2",
+    "TP3",
+    "TP4",
+    "TP5",
+    "TP6",
+    "TP7",
+    "TP8",
+    "TP9"
+  ],
+  "preservation": {
+    "method": "Canonical KiCad S-expression SHA256 after removing model forms only",
+    "files": {
+      "Solar_Charger_LED_RevB.kicad_pcb": "14faba6ca352745a88b3a1b3d59e18d3195f09b434a5fdf60252397c841cf82d",
+      "SolarCharger.pretty/CP_Radial_D6.3mm_P2.50mm.kicad_mod": "0ee299b2bc2669ef45b6cbab392d970492832a89dcae1355751efa0764495eb8",
+      "SolarCharger.pretty/C_0805_2012Metric.kicad_mod": "e20ea488fbb1037094d194a7871f51ee5f4fcab02cb8c4d36a9f857a3de7724a",
+      "SolarCharger.pretty/C_1206_3216Metric.kicad_mod": "cd988a0c314c7a27e1f69b61106d0521b3eccf9fdfde3ce74b2e145d8e7886ee",
+      "SolarCharger.pretty/C_1210_3225Metric.kicad_mod": "d6ca92dfb766c8fc6b8c351d79fa9705ab3b45224474035343fa97945d0f592a",
+      "SolarCharger.pretty/DFN-12-1EP_3x3mm_P0.45mm_EP1.65x2.38mm.kicad_mod": "3076cb318e1d695fd3adbad64f49592dbeb71b9c5ce0717fe8454dbfc0f7857d",
+      "SolarCharger.pretty/D_SMA.kicad_mod": "5507a440094a515c3efa4d436df1182b40515f2e8b9912c48e6d6b3429a6f968",
+      "SolarCharger.pretty/Fuse_1206_3216Metric.kicad_mod": "bd477d4b5d4f21463e8afda07accc86182102aa53daaafe5d9696f6457e08d8e",
+      "SolarCharger.pretty/LED_0805_2012Metric.kicad_mod": "7e3213fd00cdf5d8c7e14d3a064e9040a02cd7587cc1e468e536c72c07a3143a",
+      "SolarCharger.pretty/L_Bourns-SRN6028.kicad_mod": "72bd3f9bffea8a865c0003cd2371e290ef62291ff843079063220313d1963b7a",
+      "SolarCharger.pretty/MSOP-12-1EP_3x4.039mm_P0.65mm_EP1.651x2.845mm.kicad_mod": "b813144d44bab98623114eba75a4cc5156e37519ebd9be604860ec6ff76dfbbf",
+      "SolarCharger.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod": "4f5b8baec4b8c41b435667f0e920f8d65d4fd771fb52e483e66041790ca25c2b",
+      "SolarCharger.pretty/PinHeader_1x04_P2.54mm_Vertical.kicad_mod": "5136b03452d95e1eae56e25b2042c967733b2fae522d99a9603717cd02692081",
+      "SolarCharger.pretty/ProbePad_D0.8mm.kicad_mod": "83f5cd9f010836ba0d31eee15ee95ecd5f4ab0deabbed0d1b4b883a44c3230e0",
+      "SolarCharger.pretty/R_0805_2012Metric.kicad_mod": "c1bb1d67c7f0c35e36eed17ef32545419d64236db81d24c5e63f983d6ff97594",
+      "SolarCharger.pretty/R_1206_3216Metric.kicad_mod": "0ef851245f85bdde9320d60b9ad5e4fcee797fab0751eaae399d49e6315d153e",
+      "SolarCharger.pretty/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.kicad_mod": "f82ac5bb051750e78a59614ec0646c36663ac3bd1afe4299423a3a2fe09390f2",
+      "SolarCharger.pretty/TestPoint_Pad_D1.0mm.kicad_mod": "4cc1b60961a3ee25c5b2c963c6956669a312892f3db7231fca0fa257ddb5751f",
+      "SolarCharger.pretty/TestPoint_Pad_D1.5mm.kicad_mod": "e795fb4e5efbef021002a6e148947e7da09899b1697945c0b20e129e0488bb56"
+    },
+    "manufacturing_sha256": {
+      "manufacturing/README.txt": "46e1d0628a54cc090f1399a33d144676b08785e9dc8d737a2cd5ab1f968b83a2",
+      "manufacturing/Solar_Charger_LED_RevB-B_Cu.gbl": "d0c74b4708094647d994a5eaae39f0538639b37a7d3ac00dd0fd814aa67f0357",
+      "manufacturing/Solar_Charger_LED_RevB-B_Mask.gbs": "82c233e2e0b2883591c6a2942859cf948d9e8ea28fc0c870575597ab73d57334",
+      "manufacturing/Solar_Charger_LED_RevB-B_Paste.gbp": "e688401e444820a183a91d349bb88d57b74f6c85d9be5a9465d72e5aa8e24d6b",
+      "manufacturing/Solar_Charger_LED_RevB-B_Silkscreen.gbo": "ad573a3b844d6cb05599913ed195bb6ae82eb28598e9b5de9f912487fd478cc3",
+      "manufacturing/Solar_Charger_LED_RevB-Edge_Cuts.gm1": "ea69bea81474ae9d0eab62e7f466e77216bdcc7263a5be27058f70e37919fdcf",
+      "manufacturing/Solar_Charger_LED_RevB-F_Cu.gtl": "7796a8cd60daca498d94bc279d32b36ee8282065d7834d80daf1098c98da6cd1",
+      "manufacturing/Solar_Charger_LED_RevB-F_Mask.gts": "fb75d354fc40f24bf5d5725d41d714b36f201176570fa8e8a205cc7f3a3d0a44",
+      "manufacturing/Solar_Charger_LED_RevB-F_Paste.gtp": "69cfc0c612fe5fe326636fd1be0057689e08eeacf625ddd030e94ada1e9e6847",
+      "manufacturing/Solar_Charger_LED_RevB-F_Silkscreen.gto": "d58fba486fffa0f53c7b5bfa7b1518cf10d1fd0084b62594a7523bcf31801109",
+      "manufacturing/Solar_Charger_LED_RevB-job.gbrjob": "e09713e3ef235c4378eea1e7fd1e02f62494625c3d36f85572fb20b65fd56abd",
+      "manufacturing/Solar_Charger_LED_RevB.drl": "b562c9ed5a110f2651fbfc12b3b01390fa6accff41d481f5dded40051c86d3c9"
+    }
+  },
+  "model_geometry": [
+    {
+      "file": "Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.0,
+        1.0,
+        -0.625,
+        0.625,
+        0.0,
+        1.25
+      ],
+      "volume_mm3": 2.889933,
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+    },
+    {
+      "file": "Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.6,
+        1.6,
+        -0.8,
+        0.8,
+        0.0,
+        1.6
+      ],
+      "volume_mm3": 7.588565,
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+    },
+    {
+      "file": "Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.6,
+        1.6,
+        -1.25,
+        1.25,
+        0.0,
+        2.5
+      ],
+      "volume_mm3": 19.050965,
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9"
+    },
+    {
+      "file": "Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -3.33572,
+        4.44919,
+        -4.02628,
+        4.02628,
+        -2.0,
+        6.3
+      ],
+      "volume_mm3": 188.338444,
+      "sha256": "39dc7bf95fed00917ab20af81ff9e25a70f8d003bc07cffea11840489a11933e"
+    },
+    {
+      "file": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.27,
+        1.27,
+        -3.81,
+        1.27,
+        -3.0,
+        8.54
+      ],
+      "volume_mm3": 39.382219,
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41"
+    },
+    {
+      "file": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.27,
+        1.27,
+        -8.89,
+        1.27,
+        -3.0,
+        8.54
+      ],
+      "volume_mm3": 78.764438,
+      "sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9"
+    },
+    {
+      "file": "Diode_SMD.3dshapes/D_SMA.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -2.5,
+        2.5,
+        -1.35,
+        1.35,
+        -0.0,
+        2.22
+      ],
+      "volume_mm3": 26.189964,
+      "sha256": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db"
+    },
+    {
+      "file": "Fuse.3dshapes/Fuse_1206_3216Metric.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.6,
+        1.6,
+        -0.8,
+        0.8,
+        0.0,
+        0.55
+      ],
+      "volume_mm3": 2.614091,
+      "sha256": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203"
+    },
+    {
+      "file": "Inductor_SMD.3dshapes/L_Bourns-SRN6028_Envelope.step",
+      "valid": true,
+      "solids": 3,
+      "bounds_mm": [
+        -3.3,
+        3.3,
+        -3.1,
+        3.1,
+        0.0,
+        2.8
+      ],
+      "volume_mm3": 109.849,
+      "sha256": "bfc383dda40caa98c71149b00e4c0f2fce67127e17c2552a6022c85938580aca"
+    },
+    {
+      "file": "LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.0,
+        1.0,
+        -0.625,
+        0.625,
+        -0.0,
+        1.1
+      ],
+      "volume_mm3": 2.110324,
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98"
+    },
+    {
+      "file": "LED_SMD.3dshapes/LED_0805_Green_Display.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.0,
+        1.0,
+        -0.625,
+        0.625,
+        -0.0,
+        1.1
+      ],
+      "volume_mm3": 2.110324,
+      "sha256": "15c1904ae21c9aacc86e949bcc80e305709385862b95b2d2b09d28a42803fc31"
+    },
+    {
+      "file": "LED_SMD.3dshapes/LED_0805_Red_Display.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.0,
+        1.0,
+        -0.625,
+        0.625,
+        -0.0,
+        1.1
+      ],
+      "volume_mm3": 2.110324,
+      "sha256": "4a889b449435829a7a40165672e43a974bd7ef4f0a70201e7362d8829dd9a405"
+    },
+    {
+      "file": "Package_SO.3dshapes/MSOP-12_3x4mm_Representative.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -2.45,
+        2.45,
+        -2.0,
+        2.0,
+        -0.0,
+        0.95
+      ],
+      "volume_mm3": 10.777236,
+      "sha256": "d51883f8bd3c7c3cacd418c6746b0842452db904712ae67188fcbe159798ec78"
+    },
+    {
+      "file": "Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.0,
+        1.0,
+        -0.6,
+        0.6,
+        -0.0,
+        0.45
+      ],
+      "volume_mm3": 1.000228,
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+    },
+    {
+      "file": "Resistor_SMD.3dshapes/R_1206_3216Metric.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -1.6,
+        1.6,
+        -0.8,
+        0.8,
+        0.0,
+        0.55
+      ],
+      "volume_mm3": 2.596491,
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc"
+    },
+    {
+      "file": "TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -3.28,
+        7.62,
+        -4.6,
+        5.2,
+        -3.5,
+        13.8
+      ],
+      "volume_mm3": 1018.362846,
+      "sha256": "3c8f003aeeebf93eb2d44c42785d3aef9cd3b528671ecdf222edad47edada387"
+    }
+  ],
+  "assembly": {
+    "valid": true,
+    "solids": 143,
+    "bounds_mm": [
+      97.5,
+      157.5,
+      -135.0,
+      -80.0,
+      -1.905,
+      15.395
+    ],
+    "size_mm": [
+      60.0,
+      55.0,
+      17.3
+    ],
+    "volume_mm3": 9336.56359,
+    "file": "3D/Solar_Charger_LED_RevB_Assembly.step",
+    "sha256": "f36d5fb35731e1fb3fde9d40485de046412dad3f6856b381a3be2e8d10edea5f"
+  },
+  "limitations": [
+    "Generic package geometry; selected manufacturer parts not dimensionally qualified",
+    "U1 model body3x4.000mm versus nominal3x4.039mm; leadpitch0.65mm retained",
+    "L1 original representative6.6x6.2x2.8mm envelope; not vendor supplied",
+    "D3/D4 material colors do not indicate electrical operation",
+    "No electrical simulation, enclosure tolerance analysis, or hardware validation"
+  ],
+  "portability": {
+    "copied_folder_render": "PASS",
+    "folder_path_contains_spaces": true,
+    "global_model_directory": "intentionally nonexistent",
+    "check_3d_py": "PASS"
+  },
+  "representative_model_inspection": {
+    "modeled_components": 30,
+    "outside_board_xy": 0,
+    "pairwise_aabb_intersections": 0,
+    "visual_orientation_checks": "U1 pin1, D1/D2/D5 cathodes, C5 polarity and J1/J2 terminal orientation align; JP1 unshunted",
+    "qualification": "Bounding boxes and generic models do not establish selected-part assembly tolerances or manufacturing clearances"
+  }
+}

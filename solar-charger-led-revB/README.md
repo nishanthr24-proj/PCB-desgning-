@@ -2,9 +2,25 @@
 
 Open **Solar_Charger_LED_RevB.kicad_pro** in **KiCad 9 or newer**, then open the
 schematic or PCB from the project manager. Extract the complete ZIP first.
-The project-local symbol and footprint libraries use `${KIPRJMOD}`; no Windows
-paths or third-party library download is required. Standard KiCad 3D models are
-optional and may need the normal KiCad 3D-model package on your computer.
+The project-local symbol, footprint, and bundled 3D-model libraries use
+`${KIPRJMOD}`; no Windows paths or separate library download is required.
+
+## View the populated 3D board
+
+In the PCB Editor, choose **View → 3D Viewer** or press **Alt+3**. Keep the whole
+project folder together so the component models in `3dmodels/` load correctly.
+For a standalone assembly, open
+[`3D/Solar_Charger_LED_RevB_Assembly.step`](3D/Solar_Charger_LED_RevB_Assembly.step)
+with **File → Open** in FreeCAD. Presentation images show the
+[angled](previews/PCB_3D.png), [top](previews/PCB_3D_Top.png), and
+[bottom](previews/PCB_3D_Bottom.png) views.
+
+The assembly includes bodies for all 30 fitted components; the four mounting
+holes and nine bare test pads have no separate bodies. The model helps inspect
+placement, orientation, and connector access. U1 and L1 use representative bodies;
+see [3D/README.md](3D/README.md) for dimensional limits, source information, and
+what is included. The LED colors identify D3 and D4; the renders show no operating
+state. The 3D addition changes no electrical routing or Gerber geometry.
 
 ## Design specification
 
@@ -215,6 +231,9 @@ violations, zero unconnected items, and zero schematic/PCB mismatches. The expor
 netlist passed 48 electrical checks; the PCB passed 20 additional probe-layout and
 check-configuration checks. Those checks also passed from a separate copied folder.
 No ERC rule was set to ignore and no ERC/DRC exclusions were used in this revision.
+The 3D checks confirm 30 fitted bodies, local model paths, valid STEP imports,
+and unchanged non-model PCB/footprint data and manufacturing files. Run
+`python3 validation/check_3d.py` to check the bundle against its recorded evidence.
 See `validation/RESULTS.json` and the actual reports. Hardware remains untested.
 
 ## Files and validation
@@ -222,8 +241,9 @@ See `validation/RESULTS.json` and the actual reports. Hardware remains untested.
 - `Solar_Charger_LED_RevB.kicad_pro`, `.kicad_sch`, `.kicad_pcb`: editable project.
 - `SolarCharger.kicad_sym`, `SolarCharger.pretty/`, library tables: portable libraries.
 - `BOM.csv`: component values, packages, and selection/assembly notes.
-- `previews/`: schematic PDF/SVG, assembly drawing, and PCB views. The 3D image
-  shows the bare PCB; component 3D models are not bundled.
+- `previews/`: schematic PDF/SVG, assembly drawing, and populated PCB 3D views.
+- `3dmodels/`: bundled component STEP models and their `SOURCES.json` manifest.
+- `3D/`: standalone board-assembly STEP and viewing/model notes.
 - `validation/`: fresh KiCad ERC, PCB DRC, schematic-parity, and connectivity checks.
 - `manufacturing/`: prototype plotting/drill outputs if the final geometric checks pass.
 - `ATTRIBUTION.md`: upstream project, reference documents, and library information.
@@ -241,5 +261,6 @@ behavior, EMC, and actual battery charging still require bench verification.
 “Our Rev B keeps the single-cell 4.2 V / 500 mA charger and its charging/fault
 indicators. We added a fused reverse-polarity input path, dedicated measurement
 points, a shutdown jumper, and clearer signal labeling. The changes make controlled
-testing more convenient. The CAD reports document design-rule and connectivity
+testing more convenient. A populated 3D assembly illustrates component placement
+and connector access. The CAD reports document design-rule and connectivity
 checks; physical charging, thermal, and protection performance remain to be measured.”

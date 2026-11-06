@@ -2,7 +2,7 @@
 
 Solar battery charge controller designed in KiCad, with green charging and red fault LEDs.
 
-The editable project, local libraries, drawings, BOM, and prototype fabrication files are in **[solar-charger-led-revB/](solar-charger-led-revB/)**.
+The editable project, local libraries, populated 3D assembly, drawings, BOM, and prototype fabrication files are in **[solar-charger-led-revB/](solar-charger-led-revB/)**.
 
 ## Latest revision: B
 
@@ -19,11 +19,14 @@ The series diode adds a forward-voltage drop; the fixed input-regulation target 
 Download or clone this repository, then open [`Solar_Charger_LED_RevB.kicad_pro`](solar-charger-led-revB/Solar_Charger_LED_RevB.kicad_pro) in **KiCad 9 or newer**. Keep the project folder and its local libraries together.
 
 - [Circuit schematic (PDF)](solar-charger-led-revB/previews/Schematic.pdf)
-- [PCB preview](solar-charger-led-revB/previews/PCB_3D.png) — bare board; component models are not bundled
+- [Populated PCB preview](solar-charger-led-revB/previews/PCB_3D.png)
+- [3D viewing instructions and assembly STEP](solar-charger-led-revB/3D/README.md) — bundled component models; opens in KiCad or FreeCAD
 - [Bill of materials](solar-charger-led-revB/BOM.csv)
 - [Design details, connector pinouts, and first-power-up instructions](solar-charger-led-revB/README.md)
 - [Validation results](solar-charger-led-revB/validation/RESULTS.json)
 - [Sources and attribution](solar-charger-led-revB/ATTRIBUTION.md)
+
+![Rev B populated PCB assembly with representative component bodies](solar-charger-led-revB/previews/PCB_3D.png)
 
 ## Design target
 
@@ -36,6 +39,8 @@ Download or clone this repository, then open [`Solar_Charger_LED_RevB.kicad_pro`
 ## Validation and prototype status
 
 The revision passes KiCad ERC and PCB DRC with zero violations, zero unconnected items, and zero schematic/PCB mismatches. The exported netlist passes 48 electrical-topology and critical-value checks, and the PCB passes 20 additional probe-layout and check-configuration checks.
+
+The populated 3D model supports presentation and visual inspection of placement, orientation, and connector access. It uses representative component bodies; see the [model notes](solar-charger-led-revB/3D/README.md) before relying on dimensions. This addition changes no circuit routing or fabrication geometry and does not demonstrate charging or LED operation.
 
 **This is an unbuilt engineering prototype.** It has not been fabricated, physically tested, or electrically simulated. Complete the documented bench checks before connecting a lithium-ion cell. J4 status outputs are pulled up to the solar input voltage and must not be connected directly to microcontroller GPIOs.
 

@@ -1,0 +1,3 @@
+# Preserve CAD/vendor bytes and STEP checksums across Git line-ending settings.
+# Review the model manifests and rendered previews instead of generated entities.
+*.step binary

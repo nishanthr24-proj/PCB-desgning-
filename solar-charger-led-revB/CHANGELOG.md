@@ -1,5 +1,19 @@
 # Revision history
 
+## Revision B — populated 3D assembly, 2026-11-06
+
+- Added portable `${KIPRJMOD}/3dmodels` references for all 30 fitted component
+  bodies, with source manifest and KiCad model-license notice. H1–H4 and TP1–TP9
+  remain mounting holes and bare test pads without component bodies.
+- Added populated angled, top, and bottom previews and a standalone assembly
+  STEP for KiCad/FreeCAD presentation and mechanical inspection.
+- Used representative models for U1 and L1; documented their dimensional limits
+  in [3D/README.md](3D/README.md). D3/D4 body colors identify the green/red LEDs
+  and do not indicate illumination. The external battery, panel, and NTC are
+  outside the board assembly; JP1 is shown without a shunt.
+- Changed no electrical routing or fabrication geometry. Existing Gerbers remain
+  applicable. The 3D assembly adds no simulation or evidence of circuit operation.
+
 ## Revision B — 2026-11-06
 
 Adds testability and solar-input protection to the Rev A engineering prototype.
