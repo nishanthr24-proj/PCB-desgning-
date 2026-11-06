@@ -2,18 +2,28 @@
 
 Solar battery charge controller designed in KiCad, with green charging and red fault LEDs.
 
-The editable project, local libraries, drawings, BOM, and prototype fabrication files are in **[solar-charger-led-revA/](solar-charger-led-revA/)**.
+The editable project, local libraries, drawings, BOM, and prototype fabrication files are in **[solar-charger-led-revB/](solar-charger-led-revB/)**.
+
+## Latest revision: B
+
+Revision B adds an onboard solar-input fuse and series reverse-polarity Schottky diode, nine test points, a shutdown jumper, and corrected VIN_REG labeling. The 4.2 V / 500 mA charging settings and 60 × 55 mm board size are retained.
+
+- [Rev B changes](solar-charger-led-revB/CHANGELOG.md)
+- [Staged test plan and expected-versus-measured worksheet](solar-charger-led-revB/TEST_PLAN.md)
+- [Earlier Rev A, retained for comparison](solar-charger-led-revA/)
+
+The series diode adds a forward-voltage drop; the fixed input-regulation target remains 17.874 V on the protected charger side. The open/disconnected-NTC limitation remains: monitoring is disabled if its sensor is disconnected. Input protection does not cover reversed battery connections or input overvoltage.
 
 ## Open the project
 
-Download or clone this repository, then open [`Solar_Charger_LED_RevA.kicad_pro`](solar-charger-led-revA/Solar_Charger_LED_RevA.kicad_pro) in **KiCad 9 or newer**. Keep the project folder and its local libraries together.
+Download or clone this repository, then open [`Solar_Charger_LED_RevB.kicad_pro`](solar-charger-led-revB/Solar_Charger_LED_RevB.kicad_pro) in **KiCad 9 or newer**. Keep the project folder and its local libraries together.
 
-- [Circuit schematic (PDF)](solar-charger-led-revA/previews/Schematic.pdf)
-- [PCB preview](solar-charger-led-revA/previews/PCB_3D.png) — bare board; component models are not bundled
-- [Bill of materials](solar-charger-led-revA/BOM.csv)
-- [Design details, connector pinouts, and first-power-up instructions](solar-charger-led-revA/README.md)
-- [Validation results](solar-charger-led-revA/validation/RESULTS.json)
-- [Sources and attribution](solar-charger-led-revA/ATTRIBUTION.md)
+- [Circuit schematic (PDF)](solar-charger-led-revB/previews/Schematic.pdf)
+- [PCB preview](solar-charger-led-revB/previews/PCB_3D.png) — bare board; component models are not bundled
+- [Bill of materials](solar-charger-led-revB/BOM.csv)
+- [Design details, connector pinouts, and first-power-up instructions](solar-charger-led-revB/README.md)
+- [Validation results](solar-charger-led-revB/validation/RESULTS.json)
+- [Sources and attribution](solar-charger-led-revB/ATTRIBUTION.md)
 
 ## Design target
 
@@ -25,7 +35,7 @@ Download or clone this repository, then open [`Solar_Charger_LED_RevA.kicad_pro`
 
 ## Validation and prototype status
 
-The revision passes KiCad ERC and PCB DRC with zero violations, zero unconnected items, and zero schematic/PCB mismatches. The exported netlist passes 26 electrical-topology and critical-value checks.
+The revision passes KiCad ERC and PCB DRC with zero violations, zero unconnected items, and zero schematic/PCB mismatches. The exported netlist passes 48 electrical-topology and critical-value checks, and the PCB passes 20 additional probe-layout and check-configuration checks.
 
 **This is an unbuilt engineering prototype.** It has not been fabricated, physically tested, or electrically simulated. Complete the documented bench checks before connecting a lithium-ion cell. J4 status outputs are pulled up to the solar input voltage and must not be connected directly to microcontroller GPIOs.
 

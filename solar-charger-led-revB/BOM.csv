@@ -1,0 +1,45 @@
+Reference,Quantity,Value,Footprint,Suggested MPN (verify availability),Selection / assembly notes
+U1,1,LT3652EMSE#PBF,SolarCharger:MSOP-12-1EP_3x4.039mm_P0.65mm_EP1.651x2.845mm,LT3652EMSE#PBF,Pin-equivalent MSOP variant has wider 0.65mm pitch. Exposed pad must be soldered to GND; use reflow.
+J1,1,SOLAR INPUT,"SolarCharger:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,Raw solar connector before F1/D5; panel cold Voc<=25V.
+J2,1,1S PROTECTED CELL,"SolarCharger:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,"External protected 18650, 4.2 V CC/CV; pin 1 BAT+, pin 2 GND."
+J3,1,BATTERY NTC,SolarCharger:PinHeader_1x02_P2.54mm_Vertical,,External 10k NTC B=3380K; attach to cell. Open sensor disables temperature protection.
+J4,1,STATUS / VIN_REG,SolarCharger:PinHeader_1x04_P2.54mm_Vertical,,"VIN-level CHRG/FAULT, not MCU safe; pin4 VIN_REG sense only."
+C1,1,10u / 50V,SolarCharger:C_1210_3225Metric,,X7R; check effective capacitance at 25V bias.
+C2,1,0.68u / 10V,SolarCharger:C_0805_2012Metric,,"X7R, low leakage; nominal 3 hour timer; retries if not near float."
+C3,1,1u / 16V,SolarCharger:C_0805_2012Metric,,X7R bootstrap capacitor; 16V rating is across BOOST to SW.
+C4,1,22u / 16V,SolarCharger:C_1210_3225Metric,,X7R output bypass; choose a part with >=10uF effective capacitance at 4.2V over temperature/tolerance.
+C5,1,100u / 10V,SolarCharger:CP_Radial_D6.3mm_P2.50mm,,"Low ESR, non-ceramic, 100uF, >=10V; verify 6.3mm diameter and 2.50mm lead pitch against chosen part."
+C6,1,100n / 50V,SolarCharger:C_0805_2012Metric,,X7R local high-frequency input bypass.
+D1,1,SS14 / 40V,SolarCharger:D_SMA,SS14,"Bootstrap refresh Schottky; cathode BOOST, anode BAT."
+D2,1,SS14 / 40V,SolarCharger:D_SMA,SS14,"Catch Schottky, 1A / 40V minimum; cathode SW, anode GND."
+L1,1,22u / >=1A,SolarCharger:L_Bourns-SRN6028,SRN6028-220M,"Shielded power inductor; Isat>=1A, Irms>=0.5A, low DCR; Bourns SRN6028-220M."
+R1,1,10k / 1%,SolarCharger:R_0805_2012Metric,,0.125W or better; LED current approx 1.5mA at VIN=18V.
+R2,1,10k / 1%,SolarCharger:R_0805_2012Metric,,0.125W or better; limits fault LED current.
+D3,1,GREEN - CHARGE,SolarCharger:LED_0805_2012Metric,,"Green, low-current LED; cathode to CHRG_N."
+D4,1,RED - FAULT,SolarCharger:LED_0805_2012Metric,,"Red, low-current LED; cathode to FAULT_N."
+R3,1,203k / 0.1%,SolarCharger:R_0805_2012Metric,,Bias compensation: R3+(R4||R5)=250.14kohm.
+R4,1,60.0k / 0.1%,SolarCharger:R_0805_2012Metric,,Feedback top resistor; do not substitute 60.4k without recalculation.
+R5,1,220k / 0.1%,SolarCharger:R_0805_2012Metric,,Feedback lower resistor; nominal Vfloat = 3.3*(1+60/220)=4.200V.
+R6,1,0.20 / 1% / 0.5W,SolarCharger:R_1206_3216Metric,,Current sense; Kelvin route both terminals; Imax=0.1/0.20=0.50A; P=0.05W.
+R7,1,100k / 1%,SolarCharger:R_0805_2012Metric,,100k protected-VIN pull-up to SHDN; JP1 to GND disables charging.
+R8,1,100k / 1%,SolarCharger:R_0805_2012Metric,,Open-collector pull-up to VIN; not an MCU-level interface.
+R9,1,100k / 1%,SolarCharger:R_0805_2012Metric,,Open-collector pull-up to VIN; not an MCU-level interface.
+R10,1,562k / 1%,SolarCharger:R_0805_2012Metric,,"Input-voltage regulation top; target approx17.87V, not dynamic perturb-and-observe MPPT."
+R11,1,100k / 1%,SolarCharger:R_0805_2012Metric,,Input-voltage regulation bottom; 2.7*(1+562/100)=17.874V.
+NTC_EXTERNAL,1,10k at 25C / B3380K,"External, attach to battery",,Required for temperature monitoring; disconnected sensor disables this function.
+BATTERY_EXTERNAL,1,1S protected Li-ion 18650 / 4.2V CC-CV,External suitable holder,,Manufacturer must permit >=500mA charging. Observe polarity.
+PANEL_EXTERNAL,1,12V nominal / Vmp approx18V / cold Voc<=25V,External,,At least 5W recommended.
+FUSE_EXTERNAL,1,Appropriate battery-lead fuse,External PV and battery leads,,External battery lead protection still required; onboard F1 protects the solar input path only.
+F1,1,1A / >=32VDC,SolarCharger:Fuse_1206_3216Metric,,"Fast acting replaceable DC fuse; >=32VDC, verify DC interruption rating and exact 1206 land pattern. A current-limited panel may not blow this fuse."
+D5,1,SS16 / 60V,SolarCharger:D_SMA,"SS16 (SMA, verify vendor datasheet)","Series input reverse-polarity diode: anode VIN_FUSED, cathode protected VIN; >=1A, >=60V. No overvoltage or battery-reversal protection."
+JP1,1,SHDN - FIT TO DISABLE,SolarCharger:PinHeader_1x02_P2.54mm_Vertical,,Normally OPEN: enabled by R7 100k pull-up to protected VIN. Fit 2.54mm shunt to ground SHDN and disable charging. Never bridge VIN directly to ground.
+TP1,0,VIN_RAW,SolarCharger:TestPoint_Pad_D1.5mm,,"Raw panel voltage, BEFORE F1; probe only. Fabricated probe pad, no component to fit."
+TP2,0,VIN_FUSED,SolarCharger:TestPoint_Pad_D1.5mm,,"After F1 and before D5; probe only. Fabricated probe pad, no component to fit."
+TP3,0,VIN PROTECTED,SolarCharger:TestPoint_Pad_D1.5mm,,"Protected charger supply, after F1 and D5; probe only. Fabricated probe pad, no component to fit."
+TP4,0,BAT OUTPUT,SolarCharger:TestPoint_Pad_D1.5mm,,"Battery output voltage; use J2 for a load, not this probe stub. Fabricated probe pad, no component to fit."
+TP5,0,R6 SENSE,SolarCharger:TestPoint_Pad_D1.0mm,,"R6 pin1 Kelvin probe, SENSE / inductor side; not a power path. Fabricated probe pad, no component to fit."
+TP6,0,R6 BAT,SolarCharger:TestPoint_Pad_D1.0mm,,"R6 pin2 Kelvin probe, BAT / battery side; nominal TP5-TP6=100mV at 500mA. Fabricated probe pad, no component to fit."
+TP7,0,SW,SolarCharger:ProbePad_D0.8mm,,"Small 0.8mm SW probe pad; short stub to local switching node. Short ground spring to TP8 only after checking scope grounding. Fabricated probe pad, no component to fit."
+TP8,0,GND SCOPE,SolarCharger:ProbePad_D0.8mm,,"Nearby SW probe ground. Ground is common, not isolated. Fabricated probe pad, no component to fit."
+TP9,0,GND BENCH,SolarCharger:TestPoint_Pad_D1.5mm,,"Bench-meter ground reference. Fabricated probe pad, no component to fit."
+SHUNT_JP1,1,2.54mm 2-pin jumper shunt,External accessory,,Leave OFF JP1 during normal charging; fit to disable.

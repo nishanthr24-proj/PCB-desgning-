@@ -1,0 +1,8 @@
+(footprint "ProbePad_D0.8mm" (version 20241229) (generator "pcbnew") (layer "F.Cu")
+ (descr "Small exposed 0.8mm probe pad; no component fitted") (attr smd)
+ (property "Reference" "REF**" (at 0 -1.1 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.12))))
+ (property "Value" "ProbePad_D0.8mm" (at 0 1.1 0) (layer "F.Fab") (effects (font (size 0.8 0.8) (thickness 0.12))))
+ (fp_circle (center 0 0) (end 0.55 0) (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd"))
+ (fp_circle (center 0 0) (end 0.4 0) (stroke (width 0.05) (type solid)) (fill none) (layer "F.Fab"))
+ (pad "1" smd circle (at 0 0) (size 0.8 0.8) (layers "F.Cu" "F.Mask"))
+)

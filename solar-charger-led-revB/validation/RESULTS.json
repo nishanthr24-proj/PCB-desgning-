@@ -1,0 +1,36 @@
+{
+  "revision": "B",
+  "date": "2026-11-06",
+  "tool": "KiCad 9.0.2",
+  "ERC": {
+    "errors": 0,
+    "warnings": 0,
+    "ignored_rules": []
+  },
+  "PCB_DRC": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0
+  },
+  "electrical_topology_checks": {
+    "passed": 48,
+    "failed": 0
+  },
+  "PCB_probe_and_configuration_checks": {
+    "passed": 20,
+    "failed": 0,
+    "SW_probe_stub_mm": 1.504
+  },
+  "portability": "ERC/DRC/parity and both verification scripts also passed from a separate copied folder",
+  "manufacturing": "Gerbers and drill regenerated from final Rev B board",
+  "hardware_tests": "NOT RUN: unbuilt engineering prototype; worksheet results Not measured",
+  "simulation": "NOT RUN; no simulation included",
+  "remaining_limitations": [
+    "Open NTC disables temperature monitoring",
+    "No battery reversal or input overvoltage/surge protection",
+    "Fuse may not clear a panel-current-limited short",
+    "No load-management stage or dynamic MPPT",
+    "J4 status outputs are VIN-level; not directly MCU safe"
+  ],
+  "design_target": "1S protected 4.2V Li-ion / 500mA; nominal12V panel, Vmp approx18V, coldVoc<=25V; input-regulation setting17.874V afterD5"
+}
