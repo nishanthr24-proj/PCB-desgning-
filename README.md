@@ -4,6 +4,8 @@ Solar battery charge controller designed in KiCad, with green charging and red f
 
 The editable project, local libraries, populated 3D assembly, drawings, BOM, and prototype fabrication files are in **[solar-charger-led-revB/](solar-charger-led-revB/)**.
 
+[Final project report with individual contributions (PDF)](reports/Solar_Charger_RevB_Final_Report.pdf)
+
 ## Latest revision: B
 
 Revision B adds an onboard solar-input fuse and series reverse-polarity Schottky diode, nine test points, a shutdown jumper, and corrected VIN_REG labeling. The 4.2 V / 500 mA charging settings and 60 × 55 mm board size are retained.
